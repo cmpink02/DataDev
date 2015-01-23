@@ -16,7 +16,7 @@ shinyUI(
     # Generate a row with a sidebar
     sidebarLayout(      
       
-      # Define the sidebar with one input
+      # Define the sidebar with twoinputs; One is for gender and the other is for the coloring of the plot
       sidebarPanel(
         h4("Which combination would you like to see?"),
         h6("Choose below and be amazed!"),
@@ -36,6 +36,7 @@ shinyUI(
       
     ),
     
+    # Create the information on the most and least popular hair/eye combinations based on the input
     h6("Most and least popular hair/eye combinations:"),
     verbatimTextOutput("popularity")
   )
